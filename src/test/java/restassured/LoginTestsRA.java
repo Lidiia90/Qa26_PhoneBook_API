@@ -74,7 +74,5 @@ public class LoginTestsRA {
                 .assertThat().statusCode(401)
                 .assertThat().body("message",containsString("Login or Password incorrect"))
                 .assertThat().body("path",equalTo("/v1/user/login/usernamepassword"));
-
     }
-
 }
